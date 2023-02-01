@@ -19,7 +19,7 @@ html {
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(./img/home2.jpeg);
     background-position: center;
     position: relative;
-    background-size: cover;
+    background-size: cover
 }
 
 nav{
@@ -123,6 +123,7 @@ nav img{
         margin: 10px;
         font-size: 22px;
         cursor: pointer;
+        color: white;
     }
     
 }
@@ -131,13 +132,14 @@ nav img{
 .i-menu {
     width: 25px;
     display: none;
+    color: white;
 }
 
 /*End Home section */
 
 
 
-/* Mission and Facilities */
+/* Mission section*/
 .course {
     width: 80%;
     margin: auto;
@@ -200,6 +202,10 @@ nav img{
 
 
 /* End Mission */
+
+/*About section*/
+
+/* End About section*/
 
 
 
@@ -270,6 +276,7 @@ nav img{
     margin: auto;
     text-align: center;
     padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .facilities h1{
@@ -301,6 +308,11 @@ nav img{
     margin-bottom: 15px;
     text-align: left;
 }
+@media(max-width: 700px) {
+    .facilities-col p {
+        padding-bottom: 20px;
+    }
+}
 
 /* End Division section */
 
@@ -312,6 +324,7 @@ nav img{
     flex-direction: column;
     padding: 40px;
     border-bottom: 1px solid rgba(0,0,0,0.05);
+    padding-bottom: 100px;
 }
 .blog-heading{
     display: flex;
@@ -389,66 +402,138 @@ nav img{
 }
 /* EndNews Section*/
 
-
-
-
-/*Testimonials section */
-.testimonials {
-    padding-top: 100px;
-    margin: auto;
-    width: 80%;
-    text-align: center;
+/* Comment section */
+#testimonials {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
     padding-bottom: 100px;
+    background-color: #fdfdfd;
 }
-.testimonials h3{
-    font-size: 36px;
-    font-weight: 600;
+a{
+    text-decoration: none;
 }
-.testimonials p {
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 22px;
-    padding: 10px;
-}
-
-.testimonials-col {
-    flex-basis: 43%;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    text-align: left;
-    background: #fff3f3;
-    padding: 25px;
-    cursor: pointer;
+#testimonials{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
 }
-
-.testimonials-col img{
-    height: 40px;
-    margin-left: 5px;
-    margin-right: 30px;
+.testimonials-heading {
+    letter-spacing: 1px;
+    margin: 30px 0px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.testimonials-heading h1 {
+    font-size: 2.2rem;
+    font-weight: 500;
+    background-color: #0076c1;
+    color: #ececec;
+    padding: 10px 20px;
+}
+.testimonials-heading span{
+    font-size: 1.3rem;
+    color: #2b2b2b;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.testimonials-box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.testimonial-box{
+    width: 500px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 15px;
+    cursor: pointer;
+}
+.profile-img {
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
 }
-.testimonials-col p{
-    padding: 0;
+.profile-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
-.testimonials-col h4{
-    margin-top: 15px;
-    text-align: left;
-    padding-bottom: 20px;
+.profile {
+    display: flex;
+    flex-direction: column;
 }
-.testimonials-col .fa {
-    color: #f44336;
-    width: 35px;
+.name-user {
+    display: flex;
+    flex-direction: column;
+}
+.name-user strong{
+    color: #2b2b2b;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
 }
 
-@media(max-width: 700px){
-    .testimonials-col img{
-        margin-left: 0px;
-        margin-right: 15px;
+.name-user span {
+    color: rgb(120, 118, 118);
+    font-size: 0.8rem;
 }
+.reviews {
+    color: rgb(238, 238, 13);
 }
-
-/* End Testimonilas */
+.reviews ion-icon {
+    font-size: 1.6rem;
+}
+.box-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.client-comment{
+    font-size: 0.9rem;
+    color: #9b9b9b;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.testimonial-box:hover{
+    transform: translateY(-10px);
+    transition: all ease 0.3s;
+}
+@media(max-width: 1060px){
+    .testimonial-box{
+        width: 45%;
+        padding: 10px;
+    }
+}
+@media(max-width: 790px){
+    .testimonial-box{
+        width: 100%;
+    }
+    .testimonials-heading h1{
+        font-size: 1.4rem;
+    }
+}
+@media(max-width: 340px){
+    .box-top{
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+    .reviews{
+        margin-top: 10px;
+    }
+}
+/* end comment section */
 
 /* Footer section */
 #footer {

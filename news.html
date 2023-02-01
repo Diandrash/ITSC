@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="news.css">
+</head>
+<body>
+    <section id="navbar">
+        <nav>
+            <a href=""><img src="img/itsc.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <img class="i-menu" src="./icons/icons8-close.svg" onclick="hideMenu()">
+                <ul>
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./index.html">FACLITIES</a></li>
+                    <li><a href="./index.html">DIVISON</a></li>
+                    <li><a href="./index.html">CONTACT</a></li>
+
+                </ul>
+            </div>
+            <img class="i-menu" src="./icons/icons8-menu.svg" onclick="showMenu()">
+        </nav>
+    </section>
+
+    <section id="main">
+        <h1>Real Madrid tekuk Barcelona pada El Classico Jilid  Pertama di Bernabeu dengan skor 3 - 1 !!!</h1>
+        <h5>17 Oktober 2022</h5>
+
+        <img src="https://media.cnn.com/api/v1/images/stellar/prod/221016115057-01-real-madrid-barcelona-1016.jpg?c=original" alt="">
+
+        <div class="paragraph">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum consequuntur, iusto, nobis provident perferendis modi accusantium debitis, <br>
+                animi necessitatibus temporibus soluta perspiciatis excepturi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem quos corporis <br>
+                 vero! Architecto accusantium hic non modi quibusdam aut rerum natus quidem excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                  Tempore sunt corrupti sed eos eligendi veniam sequi repellendus excepturi totam enim nesciunt, est nostrum. <br>
+                </p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum consequuntur, iusto, nobis provident perferendis modi accusantium debitis, <br>
+                animi necessitatibus temporibus soluta perspiciatis excepturi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem quos corporis <br>
+                vero! Architecto accusantium hic non modi quibusdam aut rerum natus quidem excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Tempore sunt corrupti sed eos eligendi veniam sequi repellendus excepturi totam enim nesciunt, est nostrum. <br>
+            </p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum consequuntur, iusto, nobis provident perferendis modi accusantium debitis, <br>
+                animi necessitatibus temporibus soluta perspiciatis excepturi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem quos corporis <br>
+                vero! Architecto accusantium hic non modi quibusdam aut rerum natus quidem excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Tempore sunt corrupti sed eos eligendi veniam sequi repellendus excepturi totam enim nesciunt, est nostrum. <br>
+            </p>
+        </div>
+    </section>
+
+
+    <script >
+    
+        var navLinks = document.getElementById("navLinks");
+    
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
